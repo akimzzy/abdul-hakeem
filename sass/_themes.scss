@@ -1,0 +1,82 @@
+//// Theme switcher
+.switchImage {
+    transform: translateY(0rem) !important;
+}
+.theme {
+    position: fixed;
+    bottom: 10%;
+    right: 6%;
+    height: 3rem;
+    overflow: hidden;
+    z-index: 3;
+
+    .wrapper {
+        transform: translateY(-3rem);
+        transition: all .3s ease-in-out;
+
+    }
+    
+
+    svg {
+        height: 3rem;
+        width: 3rem;
+        border-radius: 50%;
+        padding: .5rem;
+        
+
+    }
+
+    &__light,
+    &__dark {
+        display: flex;
+        cursor: pointer;
+
+        span {
+            padding: .5rem 1rem;
+            font-size: 1.3rem;
+            border-radius: 1rem;
+            transition: all .3s ease;
+            transform: scaleY(0);
+            pointer-events: none;
+        }
+
+        &:hover span {
+            transform: scaleY(100%);
+            pointer-events: auto;
+        }
+    }
+
+    &__light {
+        
+
+        span {
+            background-color: #fff;
+            color: #000;
+        }
+
+        svg {
+            background-color: #fff;
+        }
+
+        path {
+            fill: #000;
+        }
+    }
+
+    &__dark {
+        
+
+        span {
+            background-color: #000;
+            color: white;
+        }
+
+        svg {
+            background-color: #000;
+        }
+
+        path {
+            fill: #fff;
+        }
+    }
+}

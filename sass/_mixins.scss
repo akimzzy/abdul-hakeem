@@ -1,0 +1,26 @@
+@mixin heading {
+    font-size: 2rem;
+    font-weight: 300;
+    color: var(--white);
+    margin-bottom: 4rem;
+    border-left: 4px solid $blue;
+    padding-left: 1rem;
+}
+
+
+
+@mixin mini_heading {
+    padding: 1.5rem;
+    border-radius: 2rem;
+    position: relative;
+
+    h3 {
+        font-size: 1.3rem;
+        font-weight: 700;
+        color: var(--white);
+        margin-bottom: 1rem;
+        width: 80%;
+    }
+
+    
+}
