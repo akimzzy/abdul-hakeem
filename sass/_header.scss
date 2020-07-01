@@ -17,6 +17,9 @@
         .about {
             display: inline-block;
             width: 80%;
+            @media only screen and (max-width: 500px) {
+                width: 100%;
+            }
         }
 
         h1 {

@@ -244,6 +244,9 @@ footer {
     .header .text .about {
       display: inline-block;
       width: 80%; }
+      @media only screen and (max-width: 500px) {
+        .header .text .about {
+          width: 100%; } }
     .header .text h1 {
       font-size: 5rem;
       color: rgba(0, 21, 157, 0);
@@ -389,10 +392,6 @@ footer {
     border-radius: 5px;
     cursor: pointer;
     transition: all .3s ease; }
-    @media only screen and (max-width: 500px) {
-      .contact__primary svg {
-        width: 2rem;
-        height: 2rem; } }
     .contact__primary svg:hover {
       opacity: .5; }
   .contact__primary img {
@@ -473,7 +472,8 @@ footer {
     opacity: 1; } }
 
 .moveUp {
-  top: -100%; }
+  top: -100%;
+  visibility: hidden; }
 
 .goBack {
   top: 0; }

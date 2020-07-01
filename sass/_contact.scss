@@ -58,10 +58,10 @@
             cursor: pointer;
             transition: all .3s ease;
 
-            @media only screen and (max-width: 500px) {
-                width: 2rem;
-                height: 2rem;
-            }
+            // @media only screen and (max-width: 500px) {
+            //     width: 2rem;
+            //     height: 2rem;
+            // }
 
             &:hover {
                 opacity: .5;

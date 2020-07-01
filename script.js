@@ -20,6 +20,7 @@ const MHN = (() => {
         mobileNav.classList.add("hide")
         menu.classList.remove("opened")
         menu.setAttribute('aria-expanded', menu.classList.contains('opened'))
+        document.body.classList.remove("noScroll")
     
     }));
 })()
